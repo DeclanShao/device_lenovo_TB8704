@@ -1,0 +1,7 @@
+libadsprpc.so
+libfastcvopt.so
+libOpenCL.so
+libqti-perfd-client.so
+
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so

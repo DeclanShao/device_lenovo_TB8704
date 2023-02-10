@@ -1,0 +1,116 @@
+#
+# system.prop for TB8704
+#
+
+# Audio
+af.fast_track_multiplier=1
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+ro.config.media_vol_steps=25
+
+# Bluetooth
+vendor.bluetooth.soc=smd
+
+# Bpf
+ro.kernel.ebpf.supported=false
+
+# Camera
+persist.vendor.camera.display.umax=1920x1080
+persist.vendor.camera.display.lmax=1280x720
+vendor.camera.lowpower.record.enable=1
+vidc.enc.dcvs.extra-buff-count=2
+persist.camera.HAL3.enabled=1
+persist.camera.iface.logs=0
+persist.camera.imglib.logs=0
+persist.camera.isp.debug=0
+persist.camera.mct.debug=0
+persist.camera.sensor.debug=0
+
+# Charger
+ro.charger.disable_init_blank=true
+ro.charger.enable_suspend=true
+
+
+# DRM
+drm.service.enabled=true
+
+# Graphics
+debug.gralloc.enable_fb_ubwc=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+debug.sf.recomputecrop=0
+debug.hwui.renderer=opengl
+debug.renderengine.backend=threaded
+debug.sf.disable_client_composition_cache=1
+debug.sdm.support_writeback=0
+debug.hwui.skia_atrace_enabled=false
+debug.sf.enable_transaction_tracing=false
+debug.sf.predict_hwc_composition_strategy=0
+renderthread.skia.reduceopstasksplitting=false
+
+# Fling velocities
+ro.min.fling_velocity=160 
+ro.max.fling_velocity=20000
+
+# Fingerprint
+persist.qfp=false
+
+# FM
+ro.fm.transmitter=false
+vendor.hw.fm.init=0
+
+# LMKD
+ro.lmk.use_psi=false
+ro.lmk.low=1001
+ro.lmk.medium=800
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=50
+ro.lmk.use_minfree_levels=true
+ro.lmk.log_stats=true
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+
+# Media
+media.stagefright.audio.sink=280
+vendor.vidc.debug.level=0
+vendor.vidc.dec.downscalar_width=1920
+vendor.vidc.dec.downscalar_height=1088
+vendor.vidc.disable.split.mode=1
+vendor.vidc.enc.disable.pq=true
+vendor.vidc.enc.disable_bframes=1
+vendor.vidc.enc.disable_pframes=1
+vendor.vidc.enc.narrow.searchrange=1
+vendor.video.disable.ubwc=1
+
+# Memory
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Netmgrd
+ro.vendor.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+
+# Qualcomm
+ro.vendor.qti.va_aosp.support=1
+
+# Recovery
+persist.vendor.recovery_update=false
+
+# Radio
+ro.telephony.default_network=9,1
+ro.telephony.call_ring.multiple=false
+
+# SurfaceFlinger
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.max_virtual_display_dimension=4096
+
+# Storage
+persist.sys.binary_xml=false
+
+# Zygote
+zygote.critical_window.minute=10

@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2017-2022 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libdpmframework_shim",
+    srcs: ["strdup16to8.cpp", "strdup8to16.cpp"],
+    shared_libs: ["libcutils"],
+    compile_multilib: "64",
+    system_ext_specific: true,
+}
