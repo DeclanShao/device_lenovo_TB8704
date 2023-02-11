@@ -218,13 +218,6 @@ service wcnss-service /vendor/bin/wcnss_service
     group system wifi radio
     oneshot
 
-## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
-service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
-    class main
-    user system
-    socket ims_qmid stream 0660 system radio
-    group radio log diag
-
 service vendor.imsrcsservice /vendor/bin/imsrcsd
    class main
    user system
