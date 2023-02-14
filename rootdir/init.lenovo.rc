@@ -27,8 +27,6 @@
 #
 #
 
-import /vendor/etc/init/hw/init.device.rc
-
 on post-fs
     # Set permissions for persist partition
     mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
