@@ -395,6 +395,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+    
+# Qmi
+$(call inherit-product, external/json-c/Android.configure.mk)
+PRODUCT_PACKAGES += \
+    libjson 
 
 # Ramdisk
 PRODUCT_PACKAGES += \
