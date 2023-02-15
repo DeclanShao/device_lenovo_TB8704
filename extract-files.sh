@@ -97,4 +97,7 @@ sed -i "s|/system/etc/firmware|/vendor/firmware/gxf|g" "${DEVICE_BLOB_ROOT}"/ven
 "${PATCHELF}" --add-needed "libshims_gxfpd.so" "${DEVICE_BLOB_ROOT}"/vendor/bin/gx_fpd
 "${PATCHELF}" --add-needed "fakelogprint.so" "${DEVICE_BLOB_ROOT}"/vendor/bin/gx_fpd
 
+# Display
+"${PATCHELF}" --add-needed "libshims_sdm.so" "${DEVICE_BLOB_ROOT}"/vendor/lib64/libsdmextension.so
+
 "${MY_DIR}/setup-makefiles.sh"

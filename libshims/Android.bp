@@ -27,3 +27,9 @@ cc_library_shared {
     compile_multilib: "64",
     vendor: true
 }
+cc_library_shared {
+    name: "libshims_sdm",
+    srcs: ["sdm_shim.cpp"],
+    compile_multilib: "64",
+    vendor: true
+}
