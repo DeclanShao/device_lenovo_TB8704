@@ -114,3 +114,7 @@ persist.sys.binary_xml=false
 
 # Zygote
 zygote.critical_window.minute=10
+
+#Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1
