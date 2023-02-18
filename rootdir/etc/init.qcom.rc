@@ -724,11 +724,6 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service vendor.qdmastatsd /vendor/bin/qdmastatsd
-    class late_start
-    user system
-    group readproc system net_bw_stats radio vendor_rfs_shared
-
 service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
     user gps
