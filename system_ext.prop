@@ -1,0 +1,7 @@
+#
+# system_ext.prop for TB8704
+#
+
+# DPM
+persist.vendor.dpm.feature=11
+persist.vendor.dpm.loglevel=0
