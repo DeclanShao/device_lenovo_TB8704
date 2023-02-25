@@ -307,16 +307,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc \
-    init.class_main.sh \
-    init.class_late.sh \
     init.lenovo.rc \
     init.target.rc \
-    init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qti.ims.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
