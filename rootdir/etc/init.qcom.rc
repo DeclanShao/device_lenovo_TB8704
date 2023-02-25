@@ -533,14 +533,8 @@ on property:vendor.bluetooth.startbtlogger=true
 on property:vendor.bluetooth.startbtlogger=false
     stop vendor.bt_logger
 
-service qcom-c_late-sh /vendor/bin/init.class_late.sh
-    class late_start
-    user root
-    oneshot
-
 on property:vold.decrypt=trigger_restart_framework
     start wcnss-service
-    start qcom-c_late-sh
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
