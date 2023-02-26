@@ -81,7 +81,8 @@ PRODUCT_COPY_FILES += \
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.tb8704 \
-    libunwind
+    libunwind \
+    fakelogprint
 	
 # Camera
 PRODUCT_PACKAGES += \
