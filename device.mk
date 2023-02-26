@@ -194,8 +194,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
-    memtrack.msm8953 \
-    libshims_sdm
+    memtrack.msm8953 
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
